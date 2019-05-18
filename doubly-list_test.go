@@ -121,4 +121,12 @@ func TestDList(t *testing.T) {
 		fmt.Printf("node value %v\n", node.data)
 		node = node.next
 	}
+	fmt.Printf("------------clear----------------\n")
+	dlist.Clear()
+	s = dlist.Size()
+	if s != 0 {
+		t.Errorf("Clear fail size:%v\n", s)
+	} else {
+		fmt.Printf("Clear success size:%v\n", s)
+	}
 }

@@ -178,7 +178,6 @@ func (dl *DoublyList) GetTail() *Node {
 
 //Clear 清空链表
 func (dl *DoublyList) Clear() {
-	dl = new(DoublyList)
 	dl.size = 0
 	dl.head = nil
 	dl.tail = nil
